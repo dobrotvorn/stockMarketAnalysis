@@ -5,14 +5,15 @@ import numpy as np
 import pandas as pd
 
 # from test.pystanmodel import pystanModel
-from trol import t
+from settings import *
 # import os
 from datetime import timedelta
+import os
 
 # from tinkoff.invest import CandleInterval, Client, PortfolioRequest, PortfolioResponse, InstrumentIdType
 # from tinkoff.invest.utils import now
 
-TOKEN = t
+TOKEN = os.getenv("t")
 
 
 def main():
